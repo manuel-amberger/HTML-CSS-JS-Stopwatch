@@ -1,0 +1,93 @@
+body {
+    user-select : none;
+    font-family : Arial, sans-serif;
+    background-image : radial-gradient(circle, #a0c4ff 10%, #0d1b2a 100%);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.stopwatch-container {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+    gap : 1rem;
+    height : 90vh;
+}
+
+#stopwatch {
+    font-family : "BBH Bartle", sans-serif;
+    font-weight : 400;
+    font-style : normal;
+    font-size : clamp(1.5rem, 8vw, 6rem);
+}
+
+.button-wrapper {
+    display : flex;
+    flex-direction : row;
+    gap : 1rem;
+}
+
+@media (max-width : 500px) {
+    .button-wrapper {
+        flex-direction : column;
+        gap : 0.5rem;
+    }
+}
+
+#start-pause-btn {
+    width : auto;
+    font-family : "BBH Bartle", sans-serif;
+    font-weight : 400;
+    font-style : normal;
+    font-size : clamp(1.6rem, 6vw, 2.5rem);
+    background : none;
+    border : none;
+    outline : none;
+}
+
+#reset-btn {
+    background : none;
+    border : none;
+    outline : none;
+}
+
+#reset-icon {
+    width : 3rem;
+    height : 3rem;
+}
+
+.rotate {
+    animation : spin 0.6s ease;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+#ui-hidde-btn {
+    opacity : 0;
+    transition : opacity 0.3s ease;
+    padding : 2.5px;
+    position : absolute;
+    top : 5px;
+    left : 5px;
+    background : none;
+    border : none;
+    outline : none;
+}
+
+@media (hover : hover) {
+    #ui-hidde-btn:hover {
+        opacity : 1;
+    }
+}
+
+@media (hover: none) {
+    #ui-hidde-btn {
+        opacity: 1;
+    }
+}

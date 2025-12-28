@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stopwatch</title>
+        
+        <link rel="website icon" href="img/timer-icon.png" type="png">
+
+        <link rel="stylesheet" href="style.css"></link>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <button id="ui-hidde-btn"><img src="img/hidde-icon.svg" alt="Hide-UI-Icon"></button>
+        </header>
+
+        <main>
+            <div class="stopwatch-container">
+                <div class="stopwatch-wrapper">
+                    <div id="stopwatch"></div>
+                </div>
+
+                <div class="button-wrapper">
+                    <button id="start-pause-btn">Start</button>
+                    <button id="reset-btn"><img class="reset-icon" src="img/reset-icon.svg" alt="Reset"></button>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
