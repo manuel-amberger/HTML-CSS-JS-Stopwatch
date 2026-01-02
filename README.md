@@ -41,7 +41,7 @@ A minimalist stopwatch built with JavaScript and jQuery, featuring keyboard cont
 
 ## Preview
 
-[![Stopwatch Screenshot](screenshot.png)](screenshot.png)
+[![Stopwatch Screenshot](img/screenshot.png)](img/screenshot.png)
 
 ## GitHub Page
 Link: https://manuel-amberger.github.io/HTML-CSS-JS-Stopwatch/
